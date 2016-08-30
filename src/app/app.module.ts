@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { RecipesComponent, RecipeDetailComponent, RecipeItemComponent, RecipeListComponent } from './recipes';
+import { ShoppingListAddComponent, ShoppingListComponent} from './shopping-list';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { RecipesComponent, RecipeDetailComponent, RecipeItemComponent, RecipeLis
     RecipesComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    ShoppingListAddComponent,
+    ShoppingListComponent,
   ],
   imports: [BrowserModule, FormsModule],
   bootstrap: [AppComponent],
