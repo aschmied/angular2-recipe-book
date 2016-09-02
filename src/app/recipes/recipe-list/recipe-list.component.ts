@@ -8,9 +8,11 @@ import { Recipe } from '../recipe';
   templateUrl: 'recipe-list.component.html'
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('Beer Can Chicken', 'Chicken and beer', 'http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2009/4/23/0/SG1004_19397_s4x3.jpg', []),
+    new Recipe('Oatmeal Cookies', 'Delicious', 'http://thimbleanna.com/images/2008/food/OatmealCookieStack.jpg', []),
+  ];
   @Output() recipeSelected = new EventEmitter<Recipe>();
-  tmpRecipe = new Recipe("Temp", "Temp", "http://www.clipartkid.com/images/752/yacht-charter-first-hand-charter-customer-reviews-2aRsBC-clipart.gif");
 
   constructor() { }
 
